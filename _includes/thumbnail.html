@@ -3,20 +3,20 @@
     {% if post.post_type == "normal" %}
 
         <div class="news__sm-container {% if modulo == "1" %} news__item--left {% endif %} {% if modulo == "0" %} news__item--right {% endif %}">
-            <a class="news__sm-image" href="{{ post.url }}">
+            <a class="news__sm-image" href="{{ post.url | relative_url }}">
                 <img src="images/{{ post.image_file }}">
             </a>
 
-            <a class="news__sm-title" href="{{ post.url }}">
+            <a class="news__sm-title" href="{{ post.url | relative_url }}">
                 {{ post.title }}
             </a>
 
             <div class="news__share">
                 <span class="news__share-text">PARTAGEZ</span>
-                <a class="news__share-link news__share-link--facebook" href="#news" onclick="shareFacebook('https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ post.url }}&amp;src=sdkpreparse')">
+                <a class="news__share-link news__share-link--facebook" href="#news" onclick="shareFacebook('https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ post.url | relative_url }}&amp;src=sdkpreparse')">
                     <i class="fa fa-facebook-square"></i>
                 </a>
-                <a class="news__share-link news__share-link--twitter" href="#news" onclick="shareTwitter('{{ site.url }}{{ post.url }}', '{{ post.title }}')">
+                <a class="news__share-link news__share-link--twitter" href="#news" onclick="shareTwitter('{{ site.url }}{{ post.url | relative_url }}', '{{ post.title }}')">
                     <i class="fa fa-twitter"></i>
                 </a>
             </div>
@@ -28,16 +28,16 @@
     {% if post.post_type == "highlighted" %}
 
         <div class="news__lg-container {% if modulo == "1" %} news__item--left {% endif %} {% if modulo == "0" %} news__item--right {% endif %}">
-            <a class="news__lg-image" href="{{ post.url }}">
+            <a class="news__lg-image" href="{{ post.url | relative_url }}">
                 <img src="images/{{ post.image_file }}">
             </a>
 
             <div class="news__lg-content">
-                <a href="{{ post.url }}" class="news__lg-title">
+                <a href="{{ post.url | relative_url }}" class="news__lg-title">
                    {{ post.title }}
                 </a>
 
-                <a href="{{ post.url }}" class="news__lg-read">EN SAVOIR PLUS</a>
+                <a href="{{ post.url | relative_url }}" class="news__lg-read">EN SAVOIR PLUS</a>
             </div>
         </div>
 
