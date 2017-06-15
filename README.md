@@ -1,3 +1,5 @@
-# emm.fr
+This is the jekyll version of a static site.
 
-[Github Pages](https://lobo-studio.github.io/emm.fr/)
+This branch (gh-pages) works only in Github pages.
+
+[Demo (Github pages)](https://chalatz.github.io/emm_fr_jekyll/)
