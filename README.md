@@ -1,3 +1,3 @@
-# emm.fr
+This is the jekyll version of a static site.
 
-[Github Pages](https://lobo-studio.github.io/emm.fr/)
+[Demo](https://chalatz.github.io/emm_fr_jekyll/)

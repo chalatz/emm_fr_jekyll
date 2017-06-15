@@ -25,6 +25,10 @@ twitter_username: jekyllrb
 github_username:  jekyll
 facebook_app_id: 620675918119463
 
+# repository: 'chalatz/emm_fr_jekyll'
+
+# github: [metadata]
+
 sass:
   sass_dir: _scss
 
